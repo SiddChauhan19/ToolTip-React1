@@ -1,0 +1,96 @@
+/* rgb(146, 223, 82) */
+
+/* styles to the tooltip element  */
+.tooltip-trigger .tooltip {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+    border-radius: 6px;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip-trigger:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip-trigger {
+    position: relative;
+    display: inline;
+
+}
+
+/* TO GIVE DIRECTION TO TOOLTIP */
+/* to add some dynamic behavior to the position of the tooltip */
+.tooltip-top {
+    bottom: 140%;
+    left: 0%;
+}
+
+.tooltip-right {
+    top: -45px;
+    left: 105%;
+}
+
+.tooltip-bottom {
+    top: 140%;
+    left: 0%;
+}
+
+.tooltip-left {
+    top: -45px;
+    right: 105%;
+}
+
+/* TO GIVE ARROW TO TOOLTIP */
+.tooltip-trigger .tooltip-top::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+
+.tooltip-trigger .tooltip-bottom::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+
+.tooltip-trigger .tooltip-right::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+
+.tooltip-trigger .tooltip-left::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}

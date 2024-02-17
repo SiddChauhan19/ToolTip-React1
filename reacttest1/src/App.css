@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  margin: 200px 400px;
+  padding: 90px;
+  /* background-color: rgb(73, 152, 221);
+  border-radius: 50%; */
+}
+
+.btn{
+  background-color: rgb(133, 229, 133);
+  font-size: larger;
+  border-radius: 20px;
+
+}
